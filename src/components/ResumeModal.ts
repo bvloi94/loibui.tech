@@ -12,6 +12,10 @@ export function renderResumeModal(): string {
             <h2 class="modal-title">${profileData.name} — Professional Resume</h2>
           </div>
           <div class="modal-actions">
+            <a href="/cv_loibui.docx" download="Loi_Bui_CV.docx" class="btn btn-secondary btn-sm" title="Download original Word document">
+              ${renderIcon('Download', '', 16)}
+              <span>DOCX</span>
+            </a>
             <button id="print-resume-btn" class="btn btn-secondary btn-sm" title="Print or save as PDF">
               ${renderIcon('Printer', '', 16)}
               <span>Print / PDF</span>
@@ -94,18 +98,32 @@ export function renderResumeModal(): string {
             </div>
           </div>
 
-          <!-- Education -->
+          <!-- Education & Honors -->
           <div class="resume-section">
-            <h3 class="resume-section-title">Education & Credentials</h3>
+            <h3 class="resume-section-title">Education & Honors</h3>
             <div class="resume-job-item">
               <div class="resume-job-header">
                 <div>
-                  <strong class="resume-job-role">Bachelor of Science in Computer Science & Engineering</strong>
-                  <span class="resume-job-company"> — Honors Graduate</span>
+                  <strong class="resume-job-role">FPT University</strong>
+                  <span class="resume-job-company"> — Bachelor of Software Engineering</span>
                 </div>
-                <span class="resume-job-period">2014 — 2018</span>
+                <span class="resume-job-period">2012 — 2016</span>
               </div>
-              <p class="resume-job-summary">Core Focus: Distributed Systems, Operating Systems, Computer Networks, and High-Performance Database Systems.</p>
+              <p class="resume-job-summary">• Awarded Full-Tuition Scholarship</p>
+            </div>
+
+            <div class="resume-job-item" style="margin-top: 12px;">
+              <div class="resume-job-header">
+                <div>
+                  <strong class="resume-job-role">Hung Vuong Gifted High School</strong>
+                  <span class="resume-job-company"> — Specialization in Mathematics</span>
+                </div>
+                <span class="resume-job-period">2009 — 2012</span>
+              </div>
+              <ul class="resume-job-achievements">
+                <li>First Prize, Youth Informatics Contest (City / Provincial level, 2011)</li>
+                <li>Bronze Medalist, National Programming Olympiad (2011)</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ export function renderHero(): string {
 
           <h1 class="hero-title animate-fade-in-delay-1">
             Hi, I'm <span class="text-gradient">${profileData.name}</span>.
-            <span class="hero-subtitle">Architecting high-scale distributed systems & resilient web platforms.</span>
+            <span class="hero-subtitle">Senior Full-Stack Engineer specializing in web, mobile, fintech & cloud-native systems.</span>
           </h1>
 
           <p class="hero-bio animate-fade-in-delay-2">
@@ -21,11 +21,11 @@ export function renderHero(): string {
           </p>
 
           <div class="hero-tags animate-fade-in-delay-2">
-            <span class="tech-tag">${renderIcon('Cpu', '', 14)} Distributed Systems</span>
-            <span class="tech-tag">${renderIcon('Code2', '', 14)} TypeScript & Go</span>
-            <span class="tech-tag">${renderIcon('Cloud', '', 14)} Kubernetes & Cloud</span>
-            <span class="tech-tag">${renderIcon('Sparkles', '', 14)} AI Agent Workflows</span>
-            <span class="tech-tag">${renderIcon('Layers', '', 14)} High Throughput</span>
+            <span class="tech-tag">${renderIcon('Layers', '', 14)} React & React Native</span>
+            <span class="tech-tag">${renderIcon('Code2', '', 14)} Node.js & Java</span>
+            <span class="tech-tag">${renderIcon('Zap', '', 14)} Kafka & Data Pipelines</span>
+            <span class="tech-tag">${renderIcon('Cloud', '', 14)} AWS & Google Cloud</span>
+            <span class="tech-tag">${renderIcon('ShieldCheck', '', 14)} Fintech & Mobility</span>
           </div>
 
           <div class="hero-actions animate-fade-in-delay-3">
@@ -75,16 +75,16 @@ export function renderHero(): string {
               <div class="avatar-floating-card top-right glass-card">
                 <div class="floating-icon">${renderIcon('Zap', '', 18)}</div>
                 <div class="floating-text">
-                  <span class="bold">25M+</span>
-                  <span class="sub">Daily Requests</span>
+                  <span class="bold">7+ YOE</span>
+                  <span class="sub">Full-Stack & Cloud</span>
                 </div>
               </div>
 
               <div class="avatar-floating-card bottom-left glass-card">
-                <div class="floating-icon">${renderIcon('ShieldCheck', '', 18)}</div>
+                <div class="floating-icon">${renderIcon('Sparkles', '', 18)}</div>
                 <div class="floating-text">
-                  <span class="bold">99.99%</span>
-                  <span class="sub">Production Uptime</span>
+                  <span class="bold">Top Tier</span>
+                  <span class="sub">Apple Featured App</span>
                 </div>
               </div>
 
