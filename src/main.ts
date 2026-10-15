@@ -1,52 +1,46 @@
 import './style.css';
 
-import { renderNavbar, initNavbarEvents } from './components/Navbar';
-import { renderHero } from './components/Hero';
-import { renderStats } from './components/Stats';
-import { renderCareerTimeline, initTimelineEvents } from './components/Timeline';
-import { renderProjects } from './components/Projects';
-import { renderSkills } from './components/Skills';
-import { renderPhilosophy } from './components/Philosophy';
+import { renderHeader, initHeaderEvents } from './components/Header';
+import { renderStatement } from './components/Statement';
+import { renderExperience } from './components/Experience';
+import { renderSelectedWork } from './components/SelectedWork';
+import { renderEducation } from './components/Education';
+import { renderCapabilities } from './components/Capabilities';
 import { renderContact, initContactEvents } from './components/Contact';
-import { renderFooter, initFooterEvents } from './components/Footer';
-import { renderResumeModal, initResumeModalEvents } from './components/ResumeModal';
 
 import { initTheme } from './utils/theme';
-import { initSpotlight } from './utils/spotlight';
 
 function initApp(): void {
   const appRoot = document.getElementById('app');
   if (!appRoot) return;
 
-  // Initialize Theme preference first to prevent flash
+  // Initialize theme
   initTheme();
 
-  // Assemble the application components
+  // Assemble the unified, single-page CV experience
   appRoot.innerHTML = `
-    ${renderNavbar()}
+    ${renderHeader()}
     <main>
-      ${renderHero()}
-      ${renderStats()}
-      ${renderCareerTimeline()}
-      ${renderProjects()}
-      ${renderSkills()}
-      ${renderPhilosophy()}
+      ${renderStatement()}
+      <hr class="archive-rule" />
+      ${renderExperience()}
+      <hr class="archive-rule archive-rule-wide" />
+      ${renderSelectedWork()}
+      <hr class="archive-rule" />
+      ${renderEducation()}
+      <hr class="archive-rule" />
+      ${renderCapabilities()}
+      <hr class="archive-rule" />
       ${renderContact()}
     </main>
-    ${renderFooter()}
-    ${renderResumeModal()}
   `;
 
-  // Initialize interactive event listeners
-  initNavbarEvents();
-  initTimelineEvents();
+  // Initialize event handlers
+  initHeaderEvents();
   initContactEvents();
-  initFooterEvents();
-  initResumeModalEvents();
-  initSpotlight();
 }
 
-// Start once DOM is fully loaded
+// Start on DOM ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initApp);
 } else {

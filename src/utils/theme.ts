@@ -7,8 +7,8 @@ export function getPreferredTheme(): Theme {
   if (stored === 'light' || stored === 'dark') {
     return stored;
   }
-  // Default to dark mode for elite tech aesthetic
-  return 'dark';
+  // Default to light editorial paper aesthetic
+  return 'light';
 }
 
 export function setTheme(theme: Theme): void {
