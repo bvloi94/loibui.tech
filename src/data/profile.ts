@@ -1,7 +1,7 @@
 import type { ProfileData } from '../types/career';
 
 export const profileData: ProfileData = {
-  name: 'Loi Bui',
+  name: 'Loi Van Bui',
   handle: '@loibui',
   domain: 'loibui.tech',
   roleTitle: 'Tech Lead & Senior Systems Architect',
