@@ -75,7 +75,7 @@ export function renderHero(): string {
               <div class="avatar-floating-card top-right glass-card">
                 <div class="floating-icon">${renderIcon('Zap', '', 18)}</div>
                 <div class="floating-text">
-                  <span class="bold">7+ YOE</span>
+                  <span class="bold">7+ Years</span>
                   <span class="sub">Full-Stack & Cloud</span>
                 </div>
               </div>
@@ -83,8 +83,8 @@ export function renderHero(): string {
               <div class="avatar-floating-card bottom-left glass-card">
                 <div class="floating-icon">${renderIcon('Sparkles', '', 18)}</div>
                 <div class="floating-text">
-                  <span class="bold">Top Tier</span>
-                  <span class="sub">Apple Featured App</span>
+                  <span class="bold">Featured</span>
+                  <span class="sub">Apple App Store</span>
                 </div>
               </div>
 
