@@ -1,13 +1,13 @@
 export type Theme = 'dark' | 'light';
 
-const THEME_KEY = 'loibui_tech_theme';
+const THEME_KEY = 'loibui_tech_theme_v2';
 
 export function getPreferredTheme(): Theme {
   const stored = localStorage.getItem(THEME_KEY);
   if (stored === 'light' || stored === 'dark') {
     return stored;
   }
-  // Default to light editorial paper aesthetic
+  // Default to light warm aesthetic (devas.life / craftz.dog style)
   return 'light';
 }
 

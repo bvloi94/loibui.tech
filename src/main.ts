@@ -1,11 +1,11 @@
 import './style.css';
 
-import { renderHeader, initHeaderEvents } from './components/Header';
-import { renderStatement } from './components/Statement';
-import { renderExperience } from './components/Experience';
-import { renderSelectedWork } from './components/SelectedWork';
-import { renderEducation } from './components/Education';
-import { renderCapabilities } from './components/Capabilities';
+import { renderNavbar, initNavbarEvents } from './components/Navbar';
+import { renderIntro } from './components/Intro';
+import { renderAbout } from './components/About';
+import { renderBio } from './components/Bio';
+import { renderWorks } from './components/Works';
+import { renderStack } from './components/Stack';
 import { renderContact, initContactEvents } from './components/Contact';
 
 import { initTheme } from './utils/theme';
@@ -17,26 +17,21 @@ function initApp(): void {
   // Initialize theme
   initTheme();
 
-  // Assemble the unified, single-page CV experience
+  // Assemble the unified, single-page portfolio & CV
   appRoot.innerHTML = `
-    ${renderHeader()}
-    <main>
-      ${renderStatement()}
-      <hr class="archive-rule" />
-      ${renderExperience()}
-      <hr class="archive-rule archive-rule-wide" />
-      ${renderSelectedWork()}
-      <hr class="archive-rule" />
-      ${renderEducation()}
-      <hr class="archive-rule" />
-      ${renderCapabilities()}
-      <hr class="archive-rule" />
+    ${renderNavbar()}
+    <main class="page-container">
+      ${renderIntro()}
+      ${renderAbout()}
+      ${renderBio()}
+      ${renderWorks()}
+      ${renderStack()}
       ${renderContact()}
     </main>
   `;
 
   // Initialize event handlers
-  initHeaderEvents();
+  initNavbarEvents();
   initContactEvents();
 }
 

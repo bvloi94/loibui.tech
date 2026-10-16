@@ -16,8 +16,8 @@ export const profileData: ProfileData = {
   availability: 'Available for Full-Stack & Systems Architecture Roles',
   location: 'Ho Chi Minh City, Vietnam (UTC+7) • Open to Global Remote',
   email: 'hi@loibui.tech',
-  github: 'https://github.com/kura-hashed',
-  linkedin: 'https://linkedin.com/in/loibui',
+  github: 'https://github.com/bvloi94',
+  linkedin: 'https://linkedin.com/in/loibui94',
   twitter: 'https://x.com/loibui_tech',
   stats: [
     {
